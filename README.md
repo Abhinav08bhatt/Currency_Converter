@@ -1,16 +1,15 @@
-# flutter_application_1
+# Currency Converter App
 
-A new Flutter project.
+A simple Flutter-based currency converter app.
 
-## Getting Started
+## Download
+Go to **Releases** and download the latest APK.
 
-This project is a starting point for a Flutter application.
+## Installation
+1. Download the APK
+2. Enable "Install unknown apps"
+3. Install and run
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tech
+- Flutter
+- Dart
