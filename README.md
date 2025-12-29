@@ -13,3 +13,4 @@ Go to **Releases** and download the latest APK.
 ## Tech
 - Flutter
 - Dart
+
