@@ -20,10 +20,10 @@ class _CurrencyConverterMaterialPageState extends State<CurrencyConverterMateria
 
   void convert() {
     setState(() {
-      result = double.parse(textEditingController.text)*105.55;
+      result = (double.parse(textEditingController.text)*105.55);
     });
   }
-  
+
   // @override
   // void initState() {
   //   super.initState();
@@ -61,18 +61,24 @@ class _CurrencyConverterMaterialPageState extends State<CurrencyConverterMateria
           children: [
 
         // currency output
-            Text(
-              // "0",
-              // result.toString() + " INR",
-              "${result} INR",
-              style: const TextStyle(
-                color: Color(0xFFEDEFF4),
-                fontSize: 52,
-                fontWeight: FontWeight.w700,
-                letterSpacing: -1,
+            Container(
+              alignment: Alignment.center,
+              margin: const EdgeInsets.fromLTRB(100, 10, 100, 10),
+              height: 100,
+              width: double.infinity,
+              child: FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  "${result.toStringAsFixed(2)} INR",
+                  style: const TextStyle(
+                    color: Color(0xFFEDEFF4),
+                    fontSize: 52,
+                    fontWeight: FontWeight.w700,
+                    letterSpacing: -1,
+                  ),
+                ),
               ),
             ),
-
       
         // currency input
             Padding(
@@ -99,7 +105,7 @@ class _CurrencyConverterMaterialPageState extends State<CurrencyConverterMateria
                   contentPadding: EdgeInsets.fromLTRB(22, 22, 22, 22),
                   
                   hint: const Text(
-                    "INR  to  EUR",
+                    "EUR  to  INR",
                     style: TextStyle(
                       color: Color(0xFF7C8197),
                       fontSize: 17,
