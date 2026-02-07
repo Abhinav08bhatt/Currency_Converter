@@ -2,6 +2,8 @@
 
 A simple Flutter-based currency converter app.
 
+<images screen shots>
+
 ## Download
 Go to **Releases** and download the latest APK.
 
